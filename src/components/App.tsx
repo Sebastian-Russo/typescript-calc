@@ -8,7 +8,8 @@ import { ClearButton } from './clear-button';
 const App = () => {
   const [input, setInput] = useState('');
 
-  const handleClick = (val: number) => {
+  // takes child component button in as arg, val = component = ReactNode 
+  const handleClick = (val: React.ReactNode) => {
     setInput(input + val)
   }
 

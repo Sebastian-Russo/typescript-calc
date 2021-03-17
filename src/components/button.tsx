@@ -5,7 +5,7 @@ import '../styling/button.css';
 type ButtonProps = {
   // HandleClick needs to a be a function type with a parameter that takes a ReactNode (since that's the type of props.children in this case, and you want to pass it into that function
   handleClick: (children: React.ReactNode) => void; // basically, clicking the reusable component I made, the arg is a ReactNode 
-  // don't need to specify children prop, <ButtonProps> has it by default
+  // children: ReactNode; is specified by default
 }
 
                 // set type for value
